@@ -1,0 +1,17 @@
+{
+  "name": "Masterflexo Control Total",
+  "short_name": "Masterflexo",
+  "description": "Calculadora técnica para Cireles y Flexografía",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#f0f2f5",
+  "theme_color": "#0d47a1",
+  "icons": [
+    {
+      "src": "logo-app.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
