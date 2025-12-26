@@ -1,8 +1,12 @@
 const CACHE_NAME = 'masterflexo-v1';
 const ASSETS = [
-  'index.html',
-  'manifest.json'
+  './',
+  './index.html',
+  './manifest.json',
+  './logo-app.png'
 ];
+// ... el resto del código del sw.js que ya tienes permanece igual
+
 
 // Instalar el Service Worker y cachear archivos base
 self.addEventListener('install', (e) => {
@@ -32,3 +36,4 @@ self.addEventListener('fetch', (e) => {
     })
   );
 });
+
