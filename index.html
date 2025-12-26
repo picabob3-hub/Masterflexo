@@ -455,14 +455,16 @@
         window.open("https://wa.me/?text="+t);
     }
     
-    // REGISTRO DEL SERVICE WORKER PARA PWA
-    if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-            navigator.serviceWorker.register('sw.js')
-                .then(reg => console.log('Service Worker registrado con éxito'))
-                .catch(err => console.log('Error al registrar Service Worker', err));
-        });
+    // REGISTRO DEL SERVICE WORKER CORREGIDO
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        // Usamos la ruta relativa ./ para GitHub Pages
+        navigator.serviceWorker.register('./sw.js')
+            .then(reg => console.log('SW registrado con éxito'))
+            .catch(err => console.log('Error de registro:', err));
+    });
     }
 </script>
 </body>
 </html>
+
